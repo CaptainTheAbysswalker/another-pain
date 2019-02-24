@@ -1,3 +1,7 @@
+@font-face {
+    font-family: bad-script;
+    src: url(fonts/BadScript-Regular.ttf)
+   }
 #outside_container {
     position: fixed;
     top: 0;
@@ -9,6 +13,7 @@
 }
 
 #container {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -16,6 +21,7 @@
     z-index: 1;
     margin-bottom: 50px;
     overflow: auto;
+
 }
 
 .container_2 {
@@ -31,26 +37,30 @@
 }
 
 #avatar_container {
-    position: relative;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -70%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     width: 50%;
     height: 20%;
+
 }
 
 #photo {
     position: relative;
-    top: 50%;
-    left: 50%;
+
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    transform: translate(-50%, -50%);
-    background: url(photo.jpeg);
-    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     border: 2px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .info {
@@ -58,7 +68,10 @@
     margin-top: 10px;
     color: #0b0329;
     margin-bottom: 70px;
-    font: bold italic 110% serif;
+    font-size: 110%;
+    font-weight: bold;
+    font-family: bad-script;
+    font-style: italic;
 }
 
 #menu_container {
@@ -81,8 +94,11 @@
 
 #menu li {
     float: left;
-    font: bold 14px Arial;
     width: 20%;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: Arial;
+    text-align: center;
 }
 
 #menu a {
@@ -113,7 +129,10 @@ p {
     padding-bottom: 20px;
     display: block;
     color: #0b0329;
-    font: bold italic 110% serif;
+    font-size: 110%;
+    font-weight: bold;
+    font-family: serif;
+    font-style: italic;
     text-indent: 1.5em;
 }
 
@@ -121,7 +140,7 @@ h1 {
     margin-top: 50px;
     margin-bottom: 100px;
     color: #0b0329;
-    font-size: 60pt;
+    font-size: 80px;
     font-style: oblique;
 }
 
@@ -138,4 +157,8 @@ footer {
   margin-bottom: 10px;
   margin-top: 0px;
   display: inline-block;
+}
+
+body{
+    margin: 0px;
 }
