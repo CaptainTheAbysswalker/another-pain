@@ -1,117 +1,168 @@
+@font-face {
+    font-family: bad-script;
+    src: url(fonts/BadScript-Regular.ttf)
+}
+
 #outside_container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(background.jpg);
-  z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(background.jpg);
+    z-index: -1;
 }
 
 #container {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-bottom: 50px;
+    overflow: auto;
 }
 
 .container_2 {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  z-index: 1;
+    border: 2px solid #000000c5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #c0d698c5;
+    overflow: auto;
+    margin-bottom: 50px;
 }
 
 #avatar_container {
-  position: relative;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -70%);
-  width: 50%;
-  height: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 50%;
+    height: 50%;
 }
 
 #photo {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  background: url(photo.jpeg);
-  background-size: cover;
-  border: 2px;
-  z-index: 2;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border: 2px;
+    z-index: 1;
 }
 
 .info {
-  text-align: center;
-
-  margin-top: 10px;
-  color: #0b0329;
-  margin-bottom: 70px;
-  font: bold italic 110% serif;
+    text-align: center;
+    margin-top: 10px;
+    color: #0b0329;
+    margin-bottom: 70px;
+    font-size: 110%;
+    font-weight: bold;
+    font-family: bad-script;
+    font-style: italic;
 }
 
 #menu_container {
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 40px;
-  border: 2px;
-  background: #eee;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 40px;
+    border: 2px;
+    background: #eee;
+    z-index: 2;
 }
 
 #menu {
-  list-style: none;
-  width: 800px;
-  padding: 0;
-  margin: auto;
+    list-style: none;
+    width: 800px;
+    padding: 0;
+    margin: auto;
 }
+
 #menu li {
-  float: left;
-  font: bold 14px Arial;
-  width: 20%;
+    float: left;
+    width: 25%;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
 }
+
 #menu a {
-  color: #666;
-  display: block;
-  height: 40px;
-  line-height: 36px;
-  padding: 0px 10px 0px 10px;
-  background: #eee;
-  text-decoration: none;
+    color: #666;
+    display: block;
+    height: 40px;
+    line-height: 36px;
+    padding: 0px 10px 0px 10px;
+    background: #eee;
+    text-decoration: none;
 }
+
 #menu a:hover {
-  color: #fff;
-  background: #888;
+    color: #fff;
+    background: #888;
 }
+
 h3 {
-  color: #ff0000c5;
+    color: #0b0329;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 p {
-  line-height: 40px;
-  padding-bottom: 20px;
-  display: block;
-  color: #ff0000c5;
-  font: bold italic 110% serif;
+    line-height: 40px;
+    padding-bottom: 20px;
+    display: block;
+    color: #0b0329;
+    font-size: 110%;
+    font-weight: bold;
+    font-family: serif;
+    font-style: italic;
+    text-indent: 1.5em;
 }
 
 h1 {
-  margin-top: 50px;
-  margin-bottom: 100px;
-  color: #ff0000c5;
-  font-size: 60pt;
-  font-style: oblique;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: #0b0329;
+    font-size: 80px;
+    font-style: oblique;
+}
+
+footer {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background: rgb(146, 143, 143);
+    border: 2px outset #383737c5;
+}
+
+.logo_text {
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+body {
+    margin: 0px;
+}
+
+.ava {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
 }
